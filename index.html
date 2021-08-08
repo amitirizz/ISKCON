@@ -9,6 +9,7 @@
   <!-- CSS Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Google fonts -->
@@ -32,7 +33,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
          <a class="navbar-brand" href="#">ISKCON Inc Today</a>
-         <img id="logo" src="..\\ISCKON\Images\logo.png"> 
+         <img id="logo" src="Images\logo.png"> 
         <button class="navbar-toggler" type="button"      
         data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"   aria-expanded="false" aria-label="Togglenavigation">                 
         <span class="navbar-toggler-icon"></span>
@@ -58,13 +59,14 @@
          <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-dark" type="submit">Search</button>
+            <button class="btn btn-outline-dark" type="button" data-toggle="modal" data-target="#loginModal" style="margin-left: 5px;">Login</button>
          </form>
         </div>
        </div>
     </nav> 
     <div class="container-fluid align">
       <h1>ISKCON Inc</h1>
-     <img class="img" src="..\\ISCKON\Images\guru.jpg">
+     <img class="img" src="Images\guru.jpg">
     </div>
   </div>
 
@@ -108,21 +110,21 @@
         <div class="carousel-item active slideview">
           <div class="container-fluid slidecontent">
             <h1>Founder Acharya Of Iskcon</h1>
-          <img  class=" img1" src="..\ISCKON\Images\spp.jpg"  alt="...">
+          <img  class=" img1" src="Images\spp.jpg"  alt="...">
           </div>
         </div>
 
         <div class="carousel-item slideview">
           <div class="container-fluid slidecontent">
             <h1>Srila Prabhupada Audio Lecs</h1>
-            <img class="img2" src="..\ISCKON\Images\prabhupada-bhagavatam.jpg" alt="...">
+            <img class="img2" src="Images\prabhupada-bhagavatam.jpg" alt="...">
           </div>
         </div>
 
         <div class="carousel-item slideview" >
           <div class="container-fluid slidecontent">
             <h1>Some sort of heading</h1>
-            <img  class="img3" src="..\ISCKON\Images\s1.jpg" alt="...">  
+            <img  class="img3" src="Images\s1.jpg" alt="...">  
           </div> 
         </div>
 
@@ -184,6 +186,54 @@
       </div>
      <!-- Footer -->
 
+    <!-- Modal Popop Begin -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-title text-center">
+          <h4>Login</h4>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" placeholder="Your password...">
+            </div>
+            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+          </form>
+          
+          <div class="text-center text-muted delimiter">or use a social network</div>
+          <div class="d-flex justify-content-center social-buttons">
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+              <i class="fab fa-linkedin"></i>
+            </button>
+          </di>
+        </div>
+      </div>
+    </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+      </div>
+  </div>
+</div>
+    <!-- Modal Popup End -->
+
+
+
   <footer id="footer">
     <i class="fab fa-twitter socialicon"></i>
     <i class="fab fa-facebook-f socialicon"></i>
@@ -191,12 +241,11 @@
     <i class="fas fa-envelope socialicon"></i>
     <p>© Copyright 2018 ISKCON Inc. today</p>
   </footer>
-  <script src="..\\ISCKON\JS\index.js"></script>
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  <!-- Popper JS -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+  <!-- Bootstrap JS -->
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+  <script src="JS\index.js"></script>
 </body>
 </html>
-
-
-
-
-    
-    
